@@ -1,0 +1,35 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Ineligible to travel
+      </h1>
+
+      <p>
+        You have selected that you do not want to travel. Therefore, you are ineligible for space travel.
+      </p>
+      
+
+      <p>
+        If you would like more information on this topic you can read more <a href="/index">about space travel here</a>.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}
